@@ -51,5 +51,5 @@ html[data-l=ru] .en,html[data-l=en] .ru{display:none}
 <footer>Maskaev City · <a href="mailto:hello@maskaevcity.com">hello@maskaevcity.com</a><br>
 <span class="ru">Проект в разработке. Ничто на этом сайте не является предложением или обещанием.</span><span class="en">Project in development. Nothing on this site is an offer or a promise.</span></footer>
 <script>function s(l){document.documentElement.dataset.l=l;document.documentElement.lang=l;try{localStorage.l=l}catch(e){}document.querySelectorAll('button[data-l]').forEach(b=>b.classList.toggle('on',b.dataset.l==l))}
-document.querySelectorAll('button[data-l]').forEach(b=>b.onclick=()=>s(b.dataset.l));var l;try{l=localStorage.l}catch(e){}s(l||(navigator.language||'ru').slice(0,2)=='ru'?'ru':(l||'en'))</script>
+document.querySelectorAll('button[data-l]').forEach(b=>b.onclick=()=>s(b.dataset.l));var l;try{l=localStorage.l}catch(e){}s(l||((navigator.language||'ru').slice(0,2)=='ru'?'ru':'en'))</script>
 </body></html>
